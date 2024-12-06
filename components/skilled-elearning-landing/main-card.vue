@@ -10,13 +10,10 @@ const { icon, title, description } = defineProps< MainCardProps >();
 const baseAssetsPath = '/skilled-elearning-landing'
 
 const cardIcon = computed(() => { return `${baseAssetsPath}/${icon}`})
-
-
-console.log(cardIcon.value)
 </script>
 
 <template>
-  <article class="bg-white p-8 mb-16 rounded-2xl relative" >
+  <article class="bg-white p-8 mb-16 rounded-2xl relative w-full" >
     <div class="bg-gradient-to-b from-[#FF6F48] to-[#F02AA6] absolute rounded-full w-14 h-14 -top-7 ">
       <img :src="cardIcon" :alt="`${title} icon`" />
     </div>

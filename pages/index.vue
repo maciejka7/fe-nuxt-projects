@@ -1,6 +1,15 @@
 <script lang="ts"></script>
 
-<template>index page</template>
+<template>
+
+<main class="px-6">
+
+  Welcome 
+   
+</main>
+
+
+</template>
 
 <style>
 

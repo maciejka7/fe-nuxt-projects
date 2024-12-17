@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import {  } from '@nuxtjs/tailwindcss'
 
-export type SkillLevel = 'newbie' | 'junior' | "intermediate" | "advanced" | "guru"
 
 const { level } = defineProps<{ level?: SkillLevel }>()
 const levelColor: { [color in SkillLevel ] : string} = {

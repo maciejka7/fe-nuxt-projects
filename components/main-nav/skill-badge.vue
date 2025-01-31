@@ -18,5 +18,5 @@ const badgeColor = computed(() => {
 </script>
 
 <template>
-    <div class="w-1.5 h-1.5 rounded-full" :class="badgeColor"> </div>
+    <div class="w-1.5 h-1.5 mr-1 rounded-full" :class="badgeColor"> </div>
 </template>

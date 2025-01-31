@@ -13,7 +13,11 @@
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.10.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
-    "@vueuse/nuxt": "^12.0.0",
-    "nuxt": "^3.14.1592"
+    "nuxt": "^3.14.1592",
+    "radix-vue": "^1.9.13"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^12.5.0",
+    "@vueuse/nuxt": "^12.5.0"
   }
 }

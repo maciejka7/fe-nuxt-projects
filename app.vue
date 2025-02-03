@@ -1,6 +1,4 @@
 <template>
-  <div>
-    <main-nav-top-nav />
-    <NuxtPage />
-  </div>
+  <main-nav-top-nav />
+  <NuxtPage />
 </template>

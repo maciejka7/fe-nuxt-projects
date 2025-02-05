@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "bun run vitest"
+    "test": "vitest"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.10.2",

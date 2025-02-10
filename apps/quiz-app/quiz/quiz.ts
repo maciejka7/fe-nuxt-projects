@@ -63,10 +63,15 @@ export class Quiz {
 
 
   public get currentQuestion(): Question {
-
     return this.questions[this.currentQuestionIndex]
-
   }
 
+  public goToNextQuestion() {
+    this.currentQuestionIndex += 1
+  }
+
+  public toString(): string {
+    return JSON.stringify(this)
+  }
 
 }

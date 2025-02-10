@@ -1,0 +1,3 @@
+export function sumPairs(ints: number[], s: number): [number, number] | void {
+  return undefined // your code here...
+}

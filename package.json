@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "vitest"
+    "test": "vitest --exclude './dsa/**'",
+    "test:katas": "vitest ./dsa/katas/"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.10.2",

@@ -1,7 +1,7 @@
 import { assert } from "vitest";
 import { Question } from "../question/question";
-import { uuid, UUID } from "../utils/uuid";
-import { DefaultQuizValidationPolicy, QuizValidationParams, QuizValidationPolicy } from "./quizValidationPolicy";
+import { uuid, type UUID } from "../utils/uuid";
+import { DefaultQuizValidationPolicy, type QuizValidationParams, type QuizValidationPolicy } from "./quizValidationPolicy";
 
 
 export interface QuizParam {
@@ -22,6 +22,8 @@ export class Quiz {
   public title: string
   public description: string
   public questions: Question[]
+
+  public currentQuestionIndex: number = 0;
 
   private validation: QuizValidationPolicy
 
@@ -58,5 +60,13 @@ export class Quiz {
     this.description = description
     this.questions = questions
   }
+
+
+  public get currentQuestion(): Question {
+
+    return this.questions[this.currentQuestionIndex]
+
+  }
+
 
 }

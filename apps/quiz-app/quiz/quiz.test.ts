@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { Quiz, QuizParam } from "./quiz";
+import { Quiz, type QuizParam } from "./quiz";
 import { questionMock } from "../question/questionMock";
 
 const quizParam: QuizParam = {
@@ -50,16 +50,47 @@ describe('quiz create object test', async () => {
 
 describe('quiz behavior tests', async () => {
 
-  it.todo("should can confgiure a save strategy", async () => { })
+  it("should be able to go to next questions", async () => {
+
+    const quizParam: QuizParam = {
+      description: "first quiz",
+      title: "First quiz Javascript ",
+      questions: [
+        ...questionMock
+      ]
+    }
+
+    const quiz = new Quiz(quizParam)
+
+    expect(quiz.currentQuestionIndex).toEqual(0)
+    expect(quiz.currentQuestion.label).toMatch(/how to create a function /i)
+
+    quiz.goToNextQuestion()
+
+    expect(quiz.currentQuestionIndex).toEqual(11111111111)
+    expect(quiz.currentQuestion.label).toEqual(/how do you round the number/i)
+
+    console.log(quiz)
+
+  })
+
+  it.todo("should quiz state save after go to next question", async () => { })
   it.todo("should save quiz current state to localstorage", async () => { })
   it.todo("should restore quiz state from localstorage", async () => { })
+
+  it.todo("should be not able to not to go to next question when its on last question", async () => { })
+  it.todo("should quiz be in QUESTION state when you are swiching between questions", async () => { })
+  it.todo("should be in SUMMARY state when quiz has ended", async () => { })
+  it.todo("should display a summary after quiz end - complete all answers", async () => { })
 
   it.todo("should store quiz order in linked list", async () => { })
   it.todo("should change quiz state to next question`", async () => { })
   it.todo("should change quiz state to previous question it is possible", async () => { })
   it.todo("should can configure option to back in quiz", async () => { })
 
-  it.todo("should display a summary after quiz end - complete all answers", async () => { })
+  it.todo("should can confgiure a save strategy", async () => { })
+
+
   it.todo("should quit quiz any time", async () => { })
   it.todo("should can configure if quiz should be manually ended", async () => { })
   it.todo("should save quiz state in any state change in case of unexpected quiz quit ", async () => { })

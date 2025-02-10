@@ -1,5 +1,5 @@
 import { Answer } from "../answer/answer";
-import { Question, QuestionConfig, QuestionParam } from "./question";
+import { Question, type QuestionConfig, type QuestionParam } from "./question";
 
 const q1 = () => {
   const answers = [

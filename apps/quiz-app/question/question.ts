@@ -1,7 +1,7 @@
 import { Answer } from "../answer/answer";
 import { assert } from "../utils/assert";
-import { UUID, uuid } from "../utils/uuid";
-import { QuestionValidationPolicy, SingleGoodAnswerPolicy, QuestionValidationParams } from "./questionValidationPolicy";
+import { type UUID, uuid } from "../utils/uuid";
+import { type QuestionValidationPolicy, SingleGoodAnswerPolicy, type QuestionValidationParams } from "./questionValidationPolicy";
 
 export interface QuestionParam {
   label: string,
@@ -61,5 +61,10 @@ export class Question {
     this.goodAnswers = goodAnswers
     this.explanation = explanation
   }
+
+  public goToNextQuestion(): void { }
+
+
+
 
 }

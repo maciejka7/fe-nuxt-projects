@@ -1,7 +1,6 @@
-import { Answer } from "../answer/answer"
-import { AppError, errorFactory, noError } from "../error/errorFactory"
+import { type AppError, errorFactory, noError } from "../error/errorFactory"
 import { Question } from "../question/question"
-import { QuestionValidationParams, QuestionValidationError } from "../question/questionValidationPolicy"
+import type { QuestionValidationError } from "../question/questionValidationPolicy"
 
 export interface QuizValidationError extends AppError { }
 

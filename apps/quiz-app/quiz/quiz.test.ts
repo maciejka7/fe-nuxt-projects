@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { Quiz, type QuizParam } from "./quiz";
 import { questionMock } from "../question/questionMock";
 
@@ -57,6 +57,12 @@ describe('quiz create object test', async () => {
 
 describe('quiz behavior tests', async () => {
 
+  beforeEach(() => {
+    vi.resetAllMocks()
+  })
+
+
+
   it("should be able to go to next questions", async () => {
 
     const quiz = new Quiz(quizParam)
@@ -71,14 +77,26 @@ describe('quiz behavior tests', async () => {
 
   })
 
-  it("should save quiz current state to localstorage", async () => {
+  it("should save quiz current state to localStorage with initial data", async () => {
 
     const quiz = new Quiz(quizParam)
 
-    expect(localStorage.getItem('')).toEqual()
+    expect(localStorage.setItem).toHaveBeenCalledTimes(1)
+    expect(localStorage.setItem).toHaveBeenCalledWith('quiz-storage-key', JSON.stringify(quiz))
 
   })
-  it.todo("should quiz state save after go to next question", async () => { })
+
+  it("should quiz state save after go to next question", async () => {
+
+    const quiz = new Quiz(quizParam)
+
+    expect(localStorage.setItem).toHaveBeenCalledTimes(1)
+    expect(localStorage.setItem).toHaveBeenCalledWith('quiz-storage-key', JSON.stringify(quiz))
+
+    quiz.goToNextQuestion()
+    expect(localStorage.setItem).toHaveBeenCalledTimes(2)
+
+  })
   it.todo("should restore quiz state from localstorage", async () => { })
 
   it.todo("should be not able to not to go to next question when its on last question", async () => { })

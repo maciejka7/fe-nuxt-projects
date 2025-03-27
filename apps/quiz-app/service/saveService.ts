@@ -1,13 +1,11 @@
-
 export interface SaveStrategy<T> {
-
   save: (data: T) => void,
   load: () => T | null
   clear: () => void
 
 }
 
-export class SaveLocalStorage<T> implements SaveStrategy<T> {
+export class SaveService<T> implements SaveStrategy<T> {
 
   constructor(private key: string, private storage = localStorage) { }
 
@@ -21,7 +19,6 @@ export class SaveLocalStorage<T> implements SaveStrategy<T> {
 
     if (data) { return this.parse(data) }
     return null
-
 
   }
   public clear() { this.storage.removeItem(this.key) }

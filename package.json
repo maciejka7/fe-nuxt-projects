@@ -17,6 +17,7 @@
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.14.1592",
     "radix-vue": "^1.9.13",
+    "shadcn-nuxt": "^1.0.3",
     "vitest": "^3.0.5"
   },
   "devDependencies": {

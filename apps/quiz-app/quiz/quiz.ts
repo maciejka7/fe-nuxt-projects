@@ -2,7 +2,7 @@ import { assert } from "vitest";
 import { Question } from "../question/question";
 import { uuid, type UUID } from "../utils/uuid";
 import { DefaultQuizValidationPolicy, type QuizValidationParams, type QuizValidationPolicy } from "./quizValidationPolicy";
-import { SaveLocalStorage, type SaveStrategy } from "./saveStrategy";
+import { SaveService, type SaveStrategy } from "../service/saveService";
 
 
 export interface QuizParam {
@@ -41,7 +41,7 @@ export class Quiz {
     minNumberOfQuestions: 1,
     maxNumberOfQuestions: 5,
     validation: new DefaultQuizValidationPolicy(),
-    storage: new SaveLocalStorage(this.storageKey),
+    storage: new SaveService(this.storageKey),
   }
 
   constructor(param: QuizParam, config?: QuizConfig & QuizSaveStorage<Quiz>) {

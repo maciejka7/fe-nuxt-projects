@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+    --color-rosePine-surface: #1e1e2e;
+    --color-rosePine-base: #191724;
+    --color-rosePine-surface: #1f1d2e;
+    --color-rosePine-overlay: #26233a;
+    --color-rosePine-muted: #6e6a86;
+    --color-rosePine-subtle: #908caa;
+    --color-rosePine-text: #e0def4;
+    --color-rosePine-love: #eb6f92;
+    --color-rosePine-gold: #f6c177;
+    --color-rosePine-rose: #ebbcba;
+    --color-rosePine-pine: #31748f;
+    --color-rosePine-foam: #9ccfd8;
+    --color-rosePine-iris: #c4a7e7;
+    --color-rosePine-highlightLow: #21202e;
+    --color-rosePine-highlightMed: #403d52;
+    --color-rosePine-highlightHigh: #524f67;
+
+    --color-rosePineMoon-base: #232136;
+    --color-rosePineMoon-surface: #2a273f;
+    --color-rosePineMoon-overlay: #393552;
+    --color-rosePineMoon-muted: #6e6a86;
+    --color-rosePineMoon-subtle: #908caa;
+    --color-rosePineMoon-text: #e0def4;
+    --color-rosePineMoon-love: #eb6f92;
+    --color-rosePineMoon-gold: #f6c177;
+    --color-rosePineMoon-rose: #ea9a97;
+    --color-rosePineMoon-pine: #3e8fb0;
+    --color-rosePineMoon-foam: #9ccfd8;
+    --color-rosePineMoon-iris: #c4a7e7;
+    --color-rosePineMoon-highlightLow: #2a283e;
+    --color-rosePineMoon-highlightMed: #44415a;
+    --color-rosePineMoon-highlightHigh: #56526e;
+
+    --color-rosePineDawn-base: #faf4ed;
+    --color-rosePineDawn-surface: #fffaf3;
+    --color-rosePineDawn-overlay: #f2e9e1;
+    --color-rosePineDawn-muted: #9893a5;
+    --color-rosePineDawn-subtle: #797593;
+    --color-rosePineDawn-text: #575279;
+    --color-rosePineDawn-love: #b4637a;
+    --color-rosePineDawn-gold: #ea9d34;
+    --color-rosePineDawn-rose: #d7827e;
+    --color-rosePineDawn-pine: #286983;
+    --color-rosePineDawn-foam: #56949f;
+    --color-rosePineDawn-iris: #907aa9;
+    --color-rosePineDawn-highlightLow: #f4ede8;
+    --color-rosePineDawn-highlightMed: #dfdad9;
+    --color-rosePineDawn-highlightHigh: #cecacd;
+
+}

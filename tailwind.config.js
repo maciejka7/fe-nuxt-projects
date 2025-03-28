@@ -2,7 +2,7 @@
 module.exports = {
   theme: {
 
-extend: {
+    extend: {
       colors: {
         rosePine: {
           base: "#191724",

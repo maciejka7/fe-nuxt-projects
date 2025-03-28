@@ -15,9 +15,11 @@
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.10.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@tailwindcss/vite": "^4.0.17",
     "nuxt": "^3.14.1592",
     "radix-vue": "^1.9.13",
     "shadcn-nuxt": "^1.0.3",
+    "tailwindcss": "^4.0.17",
     "vitest": "^3.0.5"
   },
   "devDependencies": {
